@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Feressence - Home</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Los iconos son placeholders-->
+  <header class="top-bar">
+    <div class="profile-icon">👤</div>
+    <div class="icons">
+      <span class="icon search">🔍</span>
+      <span class="icon favorites">❤️</span>
+      <span class="icon cart" id="cartBtn">🛍️</span>
+    </div>
+  </header>
+
+  <!-- botons de navegacion -->
+  <nav class="navbar">
+    <ul class="nav-links">
+      <li><a href="index_Home.html">HOME</a></li>
+      <li><a href="index_Product.html">CATALOG</a></li>
+      <li><a href="index_Individual.html">FEATURED</a></li>
+      <li><a href="intex_About.html">ABOUT US</a></li>
+    </ul>
+  </nav>
+
+  <!-- Secciones | faltan las imagenes, seria ponerles un canva para restringirles el tamaño y supongo que daria mas espacio para el scroll -->
+  <section class="fragrance">
+    <h2>OUR FRAGRANCES</h2>
+    <button class="read-more" onclick="location.href='index_Product.html'">READ MORE</button>
+  </section>
+
+  <section class="story">
+    <h2>OUR STORY</h2>
+    <button class="read-more" onclick="location.href='intex_About.html'">READ MORE</button>
+  </section>
+
+  <section class="ingredients">
+    <h2>OUR INGREDIENTS</h2>
+    <button class="read-more" onclick="location.href='index_Product.html'">READ MORE</button>
+  </section>
+
+  <!-- Sliding Tab -->
+  <div id="cartTab" class="slide-tab">
+    <button id="closeTab" class="close-btn">✖</button>
+    <h3>Your Shopping Bag</h3>
+    <p>No items yet.</p>
+  </div>
+
+  <!-- el footer negro de abajo que teniamos que agarra un monton de espacio la neta que loco no? -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-column">
+        <h4>HELP</h4>
+        <ul>
+          <li><a href="#">FAQs</a></li>
+          <li><a href="#">Product Care</a></li>
+          <li><a href="#">Stores</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>SERVICES</h4>
+        <ul>
+          <li><a href="#">Repairs</a></li>
+          <li><a href="#">Personalization</a></li>
+          <li><a href="#">Art of Gifting</a></li>
+          <li><a href="#">Download our Apps</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>ABOUT FERESSENCE</h4>
+        <ul>
+          <li><a href="#">Environmental Impact</a></li>
+          <li><a href="#">Sustainability</a></li>
+          <li><a href="#">Latest News</a></li>
+          <li><a href="#">Foundation Feressence</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>EMAIL AND SMS SIGN-UP</h4>
+        <p>Subscribe for exclusive email and SMS updates and receive the latest news from Ferressence, including new arrivals and exclusive collections.</p>
+        <form class="signup-form">
+          <input type="email" placeholder="Enter your email">
+          <button type="submit">Sign Up</button>
+        </form>
+      </div>
+    </div>
+
+      <p>&copy; 2026 Feressence | All rights reserved</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
