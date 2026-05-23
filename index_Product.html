@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Feressence - Listado de Productos</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Marcellus' rel='stylesheet'>
+</head>
+<body>
+    <!-- Los iconos son placeholders-->
+  <header class="top-bar">
+    <div class="profile-icon">👤</div>
+    <div class="icons">
+      <span class="icon search">🔍</span>
+      <span class="icon favorites">❤️</span>
+      <span class="icon cart" id="cartBtn">🛍️</span>
+    </div>
+  </header>
+  
+  <!-- botons de navegacion -->
+  <nav class="navbar">
+    <ul class="nav-links">
+      <li><a href="index_Home.html">HOME</a></li>
+      <li><a href="index_Product.html">CATALOG</a></li>
+      <li><a href="index_Individual.html">FEATURED</a></li>
+      <li><a href="index_About.html">ABOUT US</a></li>
+    </ul>
+  </nav>
+
+    <!-- BANNER-->
+  <section class="hero">
+    <div class="banner">
+      <!-- Imagen del perfume + ferret -->
+      <img src="Ferret y Perfume banner.png" alt="Promo Ferressence">
+      <div class="banner-text">
+        <h1>LA PRAIRE</h1>
+        <h2>50% OFF</h2>
+        <button class="btn">AGREGAR AL CARRITO</button>
+      </div>
+    </div>
+  </section>
+
+    <!-- PRODUCT LISTING: Grid de productos -->
+  <section class="product-list">
+    <div class="grid">
+
+      <!-- CARD DE PRODUCTO -->
+      <div class="product-card">
+        <img src="Botte Sombres.png" alt="Producto 1">
+        <h3>Botte Sombres</h3>
+        <p class="type">Eau de Parfum</p>
+        <p class="price">$170</p>
+      </div>
+
+      <div class="product-card">
+        <h3>Coussinet</h3>
+        <p class="type">Eau de Parfum</p>
+        <p class="price">$120</p>
+      </div>
+
+      <div class="product-card">
+        <h3>Grâce</h3>
+        <p class="type">Eau de Parfum</p>
+        <p class="price">$105</p>
+      </div>
+
+      <div class="product-card">
+        <h3>Parfait Nuit</h3>
+        <p class="type">Eau de Cologne</p>
+        <p class="price">$130</p>
+      </div>
+
+      <div class="product-card">
+        <h3>Masque</h3>
+        <p class="type">Eau de Toilette</p>
+        <p class="price">$140</p>
+      </div>
+
+      <div class="product-card">
+        <h3>Farouche</h3>
+        <p class="type">Eau de Toilette</p>
+        <p class="price">$104</p>
+      </div>
+
+      <div class="product-card new">
+        <h3>Nombre 1</h3>
+        <p class="type">Eau de Parfum</p>
+        <p class="price">$124</p>
+        <span class="badge">NEW</span>
+      </div>
+
+      <div class="product-card">
+        <h3>L’Erreur</h3>
+        <p class="type">Nombre 2</p>
+        <p class="price">$112</p>
+      </div>
+
+      <div class="product-card">
+        <h3>Ferressence</h3>
+        <p class="type">Eau de Cologne</p>
+        <p class="price">$136</p>
+      </div>
+
+      <div class="product-card">
+        <h3>Zool Furet</h3>
+        <p class="type">Eau de Cologne</p>
+        <p class="price">$132</p>
+      </div>
+
+      <div class="product-card">
+        <h3>Fourrure</h3>
+        <p class="type">Eau de Parfum</p>
+        <p class="price">$255</p>
+      </div>
+
+      <div class="product-card">
+        <h3>L’Enchantement</h3>
+        <p class="type">Eau de Toilette</p>
+        <p class="price">$140</p>
+      </div>
+
+      <div class="product-card">
+        <h3>Furet</h3>
+        <p class="type">Eau de Parfum</p>
+        <p class="price">$95</p>
+      </div>
+
+    </div>
+  </section>
+
+<!-- Sliding Tab -->
+  <div id="cartTab" class="slide-tab">
+    <button id="closeTab" class="close-btn">✖</button>
+    <h3>Your Shopping Bag</h3>
+    <p>No items yet.</p>
+  </div>
+
+  <!-- el footer negro de abajo que teniamos que agarra un monton de espacio la neta que loco no? -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-column">
+        <h4>HELP</h4>
+        <ul>
+          <li><a href="#">FAQs</a></li>
+          <li><a href="#">Product Care</a></li>
+          <li><a href="#">Stores</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>SERVICES</h4>
+        <ul>
+          <li><a href="#">Repairs</a></li>
+          <li><a href="#">Personalization</a></li>
+          <li><a href="#">Art of Gifting</a></li>
+          <li><a href="#">Download our Apps</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>ABOUT FERESSENCE</h4>
+        <ul>
+          <li><a href="#">Environmental Impact</a></li>
+          <li><a href="#">Sustainability</a></li>
+          <li><a href="#">Latest News</a></li>
+          <li><a href="#">Foundation Feressence</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>EMAIL AND SMS SIGN-UP</h4>
+        <p>Subscribe for exclusive email and SMS updates and receive the latest news from Ferressence, including new arrivals and exclusive collections.</p>
+        <form class="signup-form">
+          <input type="email" placeholder="Enter your email">
+          <button type="submit">Sign Up</button>
+        </form>
+      </div>
+    </div>
+
+      <p>&copy; 2026 Feressence | All rights reserved</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
