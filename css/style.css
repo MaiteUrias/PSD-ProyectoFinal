@@ -188,6 +188,11 @@ font-family: montserrat, serif;
 }
 
 /* ===== BANNER PRODUCT LISTING===== */
+.hero {
+  padding: 0;/* elimina el padding extra */
+  margin-top: 0;/* asegura que no haya separación arriba */
+}
+
 .banner {
   position: relative;/* Permite colocar elementos encima de la imagen */
   width: 100%;
@@ -199,7 +204,7 @@ font-family: montserrat, serif;
   width: 100%;/* Imagen ocupa todo el ancho */
   height: auto;
   display: block;
-  object-fit: cover;/* Recorta la imagen si es necesario */
+  object-fit: cover;/* Recorta la imagen*/
 }
 
 .banner-text {
@@ -217,12 +222,14 @@ font-family: montserrat, serif;
 
 .banner-text h1 {
   font-family: Marcellus, serif;
+  font-weight: lighter;
   font-size: 3.5rem;
   margin-bottom: 280px;  
 }
 
 .banner-text h2 {
   font-family: Marcellus, serif;
+  font-weight: lighter;
   font-size: 2.7rem;
   margin: 0; 
 }
@@ -256,6 +263,12 @@ font-family: montserrat, serif;
   display: block;
   margin: 0 auto 15px;/* Centra la imagen y da espacio abajo */
   background-color: #F2F1F8; /* Fondo gris detrás de la imagen */
+  transition: transform 0.3s ease; /* Animación suave */
+}
+
+/* Hover solo sobre la imagen */
+.product-card img:hover {
+  transform: scale(1.1);   /* Agranda la imagen */
 }
 
 .product-list h2 {
@@ -277,10 +290,6 @@ font-family: montserrat, serif;
   text-align: left;
   font-family: Montserrat;
   transition: transform 0.2s ease;
-}
-
-.product-card:hover {
-  transform: translateY(-5px);
 }
 
 .product-card h3 {
