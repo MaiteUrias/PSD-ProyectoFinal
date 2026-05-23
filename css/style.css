@@ -186,3 +186,74 @@ font-family: montserrat, serif;
 .social:hover {
   color: #ccc;
 }
+
+/* ===== PRODUCT LISTING ===== */
+.product-list {
+  padding: 40px 20px;
+}
+
+.product-list h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 1.8rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.product-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  text-align: left;
+  font-family: Montserrat;
+  transition: transform 0.2s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+}
+
+.product-card .type {
+  color: #777;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+.product-card .price {
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.product-card .btn {
+  background: #007bff;
+  color: #fff;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.product-card .btn:hover {
+  background: #0056b3;
+}
+
+/* Badge para productos nuevos */
+.product-card .badge {
+  display: inline-block;
+  background: #000000;
+  color: #fff;
+  font-size: 0.8rem;
+  padding: 3px 8px;
+  border-radius: 12px;
+  margin-top: 8px;
+}
