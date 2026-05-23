@@ -246,7 +246,16 @@ font-family: montserrat, serif;
 
 /* ===== PRODUCT LISTING ===== */
 .product-list {
-  padding: 40px 20px;
+  padding: 40px 40px;
+}
+
+.product-card img {
+  width: 100%;/* Que ocupe todo el ancho disponible */
+  height: 190px;/* Alto fijo para todas las imágenes */
+  object-fit: cover;/* Recorta la imagen si es más alta */
+  display: block;
+  margin: 0 auto 15px;/* Centra la imagen y da espacio abajo */
+  background-color: #F2F1F8; /* Fondo gris detrás de la imagen */
 }
 
 .product-list h2 {
