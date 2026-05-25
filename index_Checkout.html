@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Feressence - Pago</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Marcellus' rel='stylesheet'>
+</head>
+<body>
+    <!-- Los iconos son placeholders-->
+  <header class="top-bar">
+    <div class="profile-icon">👤</div>
+    <div class="icons">
+      <span class="icon search">🔍</span>
+      <span class="icon favorites">❤️</span>
+      <span class="icon cart" id="cartBtn">🛍️</span>
+    </div>
+  </header>
+  
+  <!-- botons de navegacion -->
+  <nav class="navbar">
+    <ul class="nav-links">
+      <li><a href="index_Home.html">HOME</a></li>
+      <li><a href="index_Product.html">CATALOG</a></li>
+      <li><a href="index_Individual.html">FEATURED</a></li>
+      <li><a href="index_About.html">ABOUT US</a></li>
+    </ul>
+  </nav>
+
+  <!-- ===== HEADER ===== -->
+    <h1>FINALIZAR COMPRA</h1>
+
+    <!-- ===== CONTENEDOR PRINCIPAL ===== -->
+    <main class="checkout-container">
+
+    <!-- ===== SECCIÓN 1: CUENTA ===== -->
+    <section class="checkout-section account">
+      <h2>1. Cuenta</h2>
+      <p>Ingresa tu correo electrónico para continuar como invitado o inicia sesión en tu cuenta personal.</p>
+      <form>
+        <label for="email">Correo electrónico</label>
+        <input type="email" id="email" placeholder="Introduce tu correo">
+        <button type="submit">CONTINUAR</button>
+      </form>
+    </section>
+
+    <!-- ===== SECCIÓN 2: MÉTODO DE ENTREGA ===== -->
+    <section class="checkout-section delivery">
+      <h2>2. Método de entrega</h2>
+      <p>Realizamos envíos a direcciones en todo el mundo. Todos los campos son obligatorios salvo que se indique como opcional.</p>
+      <form>
+        <!-- Campos de dirección -->
+        <input type="text" placeholder="Nombre">
+        <input type="text" placeholder="Apellido">
+        <input type="text" placeholder="País">
+        <input type="text" placeholder="Dirección">
+        <input type="text" placeholder="Código postal">
+        <input type="text" placeholder="Estado">
+        <input type="text" placeholder="Ciudad">
+
+        <!-- Checkbox opcional -->
+        <label>
+          <input type="checkbox"> Estoy enviando a una dirección de empresa (opcional)
+        </label>
+
+        <!-- Opciones de envío -->
+        <div class="shipping-options">
+          <label>
+            <input type="radio" name="shipping" checked>
+            ESTÁNDAR Entrega estimada 05/05 - 05/20 GRATIS
+          </label>
+          <label>
+            <input type="radio" name="shipping">
+            URGENTE Entrega estimada 05/09 $20.00
+          </label>
+        </div>
+
+        <button type="submit">CONTINUAR</button>
+      </form>
+    </section>
+
+    <!-- ===== SECCIÓN 3: FACTURACIÓN ===== -->
+    <section class="checkout-section billing">
+      <h2>3. Facturación</h2>
+      <form>
+        <!-- Métodos de pago -->
+        <div class="payment-methods">
+          <label><input type="radio" name="payment" checked> TARJETA DE PAGO</label>
+          <label><input type="radio" name="payment"> TARJETA DE REGALO</label>
+        </div>
+
+        <!-- Checkbox opcional -->
+        <label>
+          <input type="checkbox"> Mi dirección de facturación es la misma que la de envío (opcional)
+        </label>
+
+        <!-- Campos de tarjeta -->
+        <input type="text" placeholder="Nombre en la tarjeta">
+        <input type="text" placeholder="Número de tarjeta">
+        <input type="text" placeholder="Fecha de expiración (MM/AA)">
+        <input type="text" placeholder="Código de seguridad">
+        <input type="text" placeholder="Código de país (+52)">
+        <input type="text" placeholder="Teléfono">
+
+        <button type="submit">REALIZAR PEDIDO</button>
+        <p>Al realizar un pedido, acepto la Política de Privacidad y el Aviso Legal de Ferressence.</p>
+      </form>
+    </section>
+
+    <!-- ===== PANEL DE RESUMEN DE ORDEN ===== -->
+    <aside class="order-summary">
+      <h2>Resumen de pedido</h2>
+      <ul>
+        <li>COUSSINETS Eau de Parfum 100 ml - $120</li>
+        <li>GRÂCE Eau de Parfum 100 ml - $105</li>
+      </ul>
+      <p>Subtotal: $225</p>
+      <p>Total: $225</p>
+    </aside>
+
+  </main>
+
+
+
+
+
+  <!-- Sliding Tab -->
+  <div id="cartTab" class="slide-tab">
+    <button id="closeTab" class="close-btn">✖</button>
+    <h3>Your Shopping Bag</h3>
+    <p>No items yet.</p>
+  </div>
+
+  <!-- el footer negro de abajo que teniamos que agarra un monton de espacio la neta que loco no? -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-column">
+        <h4>HELP</h4>
+        <ul>
+          <li><a href="#">FAQs</a></li>
+          <li><a href="#">Product Care</a></li>
+          <li><a href="#">Stores</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>SERVICES</h4>
+        <ul>
+          <li><a href="#">Repairs</a></li>
+          <li><a href="#">Personalization</a></li>
+          <li><a href="#">Art of Gifting</a></li>
+          <li><a href="#">Download our Apps</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>ABOUT FERESSENCE</h4>
+        <ul>
+          <li><a href="#">Environmental Impact</a></li>
+          <li><a href="#">Sustainability</a></li>
+          <li><a href="#">Latest News</a></li>
+          <li><a href="#">Foundation Feressence</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>EMAIL AND SMS SIGN-UP</h4>
+        <p>Subscribe for exclusive email and SMS updates and receive the latest news from Ferressence, including new arrivals and exclusive collections.</p>
+        <form class="signup-form">
+          <input type="email" placeholder="Enter your email">
+          <button type="submit">Sign Up</button>
+        </form>
+      </div>
+    </div>
+
+      <p>&copy; 2026 Feressence | All rights reserved</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
