@@ -279,17 +279,22 @@ font-family: montserrat, serif;
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(4, 1fr); /* 4 columnas iguales */
+  margin-left: 80px;
+  margin-right: 80px;
+  row-gap: 15px;/* espacio vertical */
+  column-gap: 85px;/* espacio horizontal */
 }
 
 .product-card {
+  width: 200px;/* Ancho fijo */
+  height: 310px;/* Alto fijo */
   background: #fff;
   padding: 20px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
   text-align: left;
   font-family: Montserrat;
   transition: transform 0.2s ease;
+  position: relative;
 }
 
 .product-card h3 {
@@ -308,25 +313,29 @@ font-family: montserrat, serif;
   margin-bottom: 12px;
 }
 
-.product-card .btn {
-  background: #007bff;
-  color: #fff;
-  border: none;
-  padding: 8px 15px;
-  cursor: pointer;
+.product-card.new {
+  grid-column: 2 ;/* ocupa 2 columnas */
+  grid-row: 2;/* ocupa 2 filas*/
+  height: auto; /* que se ajuste al contenido */
+  align-self: center;/* centra verticalmente */
+  justify-self: center;/* centra horizontalmente */
 }
 
-.product-card .btn:hover {
-  background: #0056b3;
+.product-card.new img {
+  height: 560px;
+  width: 600px;
+  object-fit: cover;
 }
 
 /* Badge para productos nuevos */
 .product-card .badge {
-  display: inline-block;
+  position: absolute;
+  top: 10px;
+  right: 10px;
   background: #000000;
   color: #fff;
   font-size: 0.8rem;
   padding: 3px 8px;
   border-radius: 12px;
-  margin-top: 8px;
+  z-index: 10;
 }
