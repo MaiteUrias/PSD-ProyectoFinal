@@ -356,3 +356,28 @@ font-family: montserrat, serif;
 .product-card.new img:hover {
   transform: scale(1.04);/* Agranda la imagen grande*/
 }
+
+.stars {
+  position: absolute;/* esquina inferior dentro de la tarjeta */
+  bottom: 22px;
+  left: 50%;
+  transform: translateX(150%);
+  display: flex;
+  gap: 5px;
+}
+
+.star {
+  font-size: 1.9rem;
+  color: #000;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.star:hover{
+  background: #F2F1F8;
+}
