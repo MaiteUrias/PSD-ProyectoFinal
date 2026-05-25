@@ -452,7 +452,7 @@ font-family: montserrat, serif;
 .order-summary {
   background: #f9f9f9;
   padding: 20px;
-  border: 1px solid #ddd;
+  /*border: 1px solid #ddd;*/
   height: fit-content; /* se ajusta al contenido */
 }
 
