@@ -402,8 +402,19 @@ font-family: montserrat, serif;
 .checkout-subtitle {
   font-family: Montserrat; 
   font-weight:  bolder;
+  font-size: 8.2rem;
   text-align: left;
   color: #000;
+}
+
+.checkout-section {
+  text-align: left; /* alinea texto a la izquierda */
+  font-family: Montserrat; 
+}
+
+.order-summary {
+  text-align: left; /* alinea texto a la izquierda */
+  font-family: Montserrat; 
 }
 
 .checkout-container {
@@ -461,16 +472,20 @@ font-family: montserrat, serif;
 
 .checkout-section button {
   background: #000;
-  color: #fff;
+  color: #ffffff;
+  width: 200px;
   border: none;
   padding: 12px;
   cursor: pointer;
   font-size: 1rem;
+  text-align: center;
   transition: background 0.3s ease;
+  font-family: Marcellus, serif; 
 }
 
 .checkout-section button:hover {
-  background: #444;
+  background: #ffffff;
+  color: #000;
 }
 
 /* ===== OPCIONES DE ENVÍO Y PAGO ===== */
