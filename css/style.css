@@ -370,7 +370,7 @@ font-family: montserrat, serif;
 .product-card.new .stars {
   position: absolute;
   top: 659px;
-  left: 520px; 
+  left: 52git0px; 
   transform: none; /* elimina el translate que la sacaba */
 }
 
