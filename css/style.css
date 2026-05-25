@@ -394,15 +394,16 @@ font-family: montserrat, serif;
 
 .checkout-title {
   font-family: Marcellus, serif; 
+    font-size: 1.7rem;
   font-weight: lighter;
   text-align: center;
   color: #000;
 }
 
-.checkout-subtitle {
+.checkout-section h2.checkout-subtitle {
   font-family: Montserrat; 
   font-weight:  bolder;
-  font-size: 8.2rem;
+  font-size: 1.2rem;
   text-align: left;
   color: #000;
 }
@@ -442,12 +443,6 @@ font-family: montserrat, serif;
   border: 1px solid #ddd;
   border-radius: 6px;
   height: fit-content; /* se ajusta al contenido */
-}
-
-.checkout-section h2 {
-  font-size: 1.4rem;
-  margin-bottom: 15px;
-  color: #333;
 }
 
 .checkout-section p {
