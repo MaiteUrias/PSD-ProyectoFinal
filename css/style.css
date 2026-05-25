@@ -280,11 +280,31 @@ font-family: montserrat, serif;
 .grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr); /* 4 columnas iguales */
+  gap: 20px;
   margin-left: 80px;
   margin-right: 80px;
-  row-gap: 15px;/* espacio vertical */
-  column-gap: 85px;/* espacio horizontal */
+  margin-top: 80px;
+  margin-bottom: 80px;
+  grid-template-areas:
+    "a b c d"
+    "e new new f"
+    "g new new h"
+    "i j k l";
 }
+
+.product-card:nth-child(1) { grid-area: a; }
+.product-card:nth-child(2) { grid-area: b; }
+.product-card:nth-child(3) { grid-area: c; }
+.product-card:nth-child(4) { grid-area: d; }
+.product-card:nth-child(5) { grid-area: e; }
+.product-card.new { grid-area: new; }
+.product-card:nth-child(8) { grid-area: f; }
+.product-card:nth-child(9) { grid-area: g; }
+.product-card:nth-child(10) { grid-area: h; }
+.product-card:nth-child(11) { grid-area: i; }
+.product-card:nth-child(12) { grid-area: j; }
+.product-card:nth-child(13) { grid-area: k; }
+.product-card:nth-child(14) { grid-area: l; }
 
 .product-card {
   width: 200px;/* Ancho fijo */
@@ -295,6 +315,7 @@ font-family: montserrat, serif;
   font-family: Montserrat;
   transition: transform 0.2s ease;
   position: relative;
+  /*box-shadow: 0 4px 8px rgba(0,0,0,0.2);*/
 }
 
 .product-card h3 {
@@ -313,17 +334,9 @@ font-family: montserrat, serif;
   margin-bottom: 12px;
 }
 
-.product-card.new {
-  grid-column: 2 ;/* ocupa 2 columnas */
-  grid-row: 2;/* ocupa 2 filas*/
-  height: auto; /* que se ajuste al contenido */
-  align-self: center;/* centra verticalmente */
-  justify-self: center;/* centra horizontalmente */
-}
-
 .product-card.new img {
   height: 560px;
-  width: 600px;
+  width: 533px;
   object-fit: cover;
 }
 
@@ -331,11 +344,15 @@ font-family: montserrat, serif;
 .product-card .badge {
   position: absolute;
   top: 10px;
-  right: 10px;
+  right: -320px;
   background: #000000;
   color: #fff;
-  font-size: 0.8rem;
+  font-size: 1.2rem;
   padding: 3px 8px;
-  border-radius: 12px;
+  border-radius: 16px;
   z-index: 10;
+}
+
+.product-card.new img:hover {
+  transform: scale(1.04);/* Agranda la imagen grande*/
 }
