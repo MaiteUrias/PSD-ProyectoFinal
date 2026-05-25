@@ -366,6 +366,14 @@ font-family: montserrat, serif;
   gap: 5px;
 }
 
+/* Estrella en la tarjeta grande */
+.product-card.new .stars {
+  position: absolute;
+  top: 659px;
+  left: 520px; 
+  transform: none; /* elimina el translate que la sacaba */
+}
+
 .star {
   font-size: 1.9rem;
   color: #000;
