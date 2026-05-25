@@ -4,7 +4,7 @@
 body {
   font-family: Marcellus, serif;
   margin: 0;
-  padding: 0;
+  padding: 0px;
 }
 
 /* La barra antes de las secciones*/
@@ -394,7 +394,7 @@ font-family: montserrat, serif;
 
 .checkout-title {
   font-family: Marcellus, serif; 
-    font-size: 1.7rem;
+    font-size: 3rem;
   font-weight: lighter;
   text-align: center;
   color: #000;
@@ -402,10 +402,14 @@ font-family: montserrat, serif;
 
 .checkout-section h2.checkout-subtitle {
   font-family: Montserrat; 
-  font-weight:  bolder;
+  font-weight:  700;
   font-size: 1.2rem;
   text-align: left;
   color: #000;
+
+  /* linea debajo de cada subtitulo*/
+  border-bottom: 3px solid #000;
+  padding-bottom: 1px;/* espacio entre texto y línea */
 }
 
 .checkout-section {
@@ -432,17 +436,33 @@ font-family: montserrat, serif;
   background: #fff;
   padding: 20px;
   margin-bottom: 30px;
-  border: 1px solid #ddd;
-  border-radius: 6px;
+  /*border: 1px solid #ddd;*/
+  line-height: 2.6; /* aumenta el espacio entre líneas */
 }
 
 /* Columna derecha: resumen de pedido */
 .order-summary {
   background: #f9f9f9;
   padding: 20px;
-  border: 1px solid #ddd;
-  border-radius: 6px;
+  /*border: 1px solid #ddd;*/
   height: fit-content; /* se ajusta al contenido */
+  line-height: 2.6; /* aumenta el espacio entre líneas */
+}
+
+.order-summary {
+  background: #f9f9f9;
+  padding: 20px;
+  border: 1px solid #ddd;
+  height: fit-content; /* se ajusta al contenido */
+}
+
+.order-summary h2.checkout-summary{
+  font-weight:  700;
+  font-size: 1.2rem;
+
+  /* linea debajo de cada subtitulo*/
+  border-bottom: 3px solid #000;
+  padding-bottom: 1px;/* espacio entre texto y línea */
 }
 
 .checkout-section p {
@@ -461,8 +481,7 @@ font-family: montserrat, serif;
 .checkout-section input[type="text"],
 .checkout-section input[type="email"] {
   padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+  /*border: 1px solid #ccc;*/
 }
 
 .checkout-section button {
@@ -501,8 +520,7 @@ font-family: montserrat, serif;
 .order-summary {
   background: #f9f9f9;
   padding: 20px;
-  border: 1px solid #ddd;
-  border-radius: 6px;
+  /*border: 1px solid #ddd;*/
 }
 
 .order-summary h2 {
