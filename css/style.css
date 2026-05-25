@@ -392,6 +392,19 @@ font-family: montserrat, serif;
 
 /* ===== CHECKOUT ===== */
 
+.back-btn {
+  display: inline-block;
+  color: #000;
+  padding: 10px 20px;/* espacio interno */
+  text-decoration: none;/* quita el subrayado */
+  font-size: 1rem;/* tamaño del texto */
+  transition: background 0.3s ease;
+}
+
+.back-btn:hover {
+  text-decoration: underline;
+}
+
 .checkout-title {
   font-family: Marcellus, serif; 
     font-size: 3rem;
@@ -500,6 +513,7 @@ font-family: montserrat, serif;
 .checkout-section button:hover {
   background: #ffffff;
   color: #000;
+  border: 2px solid #000;
 }
 
 /* ===== OPCIONES DE ENVÍO Y PAGO ===== */
