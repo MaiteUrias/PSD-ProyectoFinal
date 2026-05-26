@@ -516,6 +516,30 @@ font-family: montserrat, serif;
   border: 2px solid #000;
 }
 
+.delivery-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* espacio entre filas */
+}
+
+.delivery-form .row1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* tres columnas iguales */
+  gap: 15px; /* espacio entre columnas */
+}
+
+.delivery-form .row2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; /* tres columnas iguales */
+  gap: 15px; /* espacio entre columnas */
+}
+
+.delivery-form input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
 /* ===== OPCIONES DE ENVÍO Y PAGO ===== */
 .shipping-options,
 .payment-methods {
