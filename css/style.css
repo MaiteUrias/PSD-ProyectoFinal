@@ -1,5 +1,6 @@
 @import url('https://googleapis.com');
 @import url('https://googleapis.com');
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&family=Montserrat:wght@300;400;700&display=swap');
 
 body {
   font-family: Marcellus, serif;
@@ -581,4 +582,163 @@ font-family: montserrat, serif;
 .order-summary p {
   font-weight: bold;
   margin-top: 10px;
+}
+
+/* ===== ABOUT US ===== */
+
+.aboutus {
+  padding: 0;
+}
+
+.about-hero {
+  position: relative;
+  width: 100%;
+  height: 700px;
+  overflow: hidden;
+}
+
+.about-hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about-overlay {
+  position: absolute;
+  top: 80px;
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+
+.about-overlay h1 {
+  font-size: 4rem;
+  font-weight: lighter;
+  margin-bottom: 350px;
+}
+
+.about-overlay p {
+  font-family: Montserrat;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.mission {
+  background: #f4f4f4;
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+
+.mission-logo {
+  width: 80px;
+  margin-bottom: 20px;
+}
+
+.mission h2 {
+  font-size: 3rem;
+  font-weight: lighter;
+  margin-bottom: 10px;
+}
+
+.mission h3 {
+  font-family: Montserrat;
+  font-size: 1rem;
+  letter-spacing: 3px;
+  margin-bottom: 30px;
+}
+
+.mission-text {
+  font-family: Montserrat;
+  max-width: 600px;
+  margin: auto;
+  line-height: 1.8;
+  color: #555;
+}
+
+
+.about-columns {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 60px 80px;
+  background: #f4f4f4;
+}
+
+.about-card {
+  width: 500px;
+  text-align: center;
+}
+
+.about-card img {
+  width: 100%;
+  height: 550px;
+  object-fit: cover;
+}
+
+.about-card h2 {
+  margin-top: 40px;
+  font-size: 3rem;
+  font-weight: lighter;
+}
+
+.about-card p {
+  font-family: Montserrat;
+  color: #555;
+  line-height: 1.8;
+}
+
+.about-btn {
+  margin-top: 20px;
+  padding: 12px 30px;
+  border: 1px solid #000;
+  background: transparent;
+  font-family: Marcellus;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.about-btn:hover {
+  background: black;
+  color: white;
+}
+
+/* Los resources */
+
+.resources {
+  background: #f4f4f4;
+  padding-bottom: 100px;
+}
+
+.resources h2 {
+  font-size: 3rem;
+  font-weight: lighter;
+  margin-bottom: 40px;
+}
+
+.resources hr {
+  width: 90%;
+  margin-bottom: 50px;
+}
+
+.resource-subtitle {
+  font-family: Montserrat;
+  margin-bottom: 60px;
+}
+
+.resource-links {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.resource-item h3 {
+  font-size: 2rem;
+  font-weight: lighter;
+}
+
+.resource-item a {
+  font-family: Montserrat;
+  color: #777;
+  text-decoration: underline;
+  font-size: 0.9rem;
 }
