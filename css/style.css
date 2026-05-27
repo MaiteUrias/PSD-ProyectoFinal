@@ -853,3 +853,105 @@ section {
   font-size: 0.9rem;
 }
 /* ERICK!!!! DE AQUI PARA ARRIBA ALTERE EL CSS*/
+
+/* ===== EL NUEVO FOOTER ===== */
+footer {
+  background: #000;
+  color: #fff;
+  padding: 3rem 2rem;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 2.6; /* aumenta el espacio entre líneas */
+}
+
+/* Logo superior */
+.footer__logo-row {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.footer__logo {
+  height: 60px;
+}
+
+/* Columnas*/
+.footer__columns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.footer__col {
+  flex: 1 1 220px; /* ancho mínimo de cada columna */
+}
+
+.footer__col-title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bolder;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.footer__col-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer__col-links li {
+  margin-bottom: 0.5rem;
+}
+
+.footer__link {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer__link:hover {
+  text-decoration: underline;
+}
+
+/* Texto de suscripción */
+.footer__subscribe-text {
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  color: #ccc;
+}
+
+.footer__follow-title {
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+/* Íconos sociales */
+.footer__socials {
+  display: flex;
+  gap: 1rem;
+  align-items: center; /* alinea verticalmente */
+}
+
+.footer__social {
+  width: 24px;/* mismo ancho */
+  height: 24px;/* mismo alto */
+  object-fit: contain; /* ajusta la imagen dentro del cuadro */
+  display: block;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.footer__social:hover {
+  transform: scale(1.1);
+}
+
+/* Logo inferior */
+.footer__bottom {
+  border-top: 1px solid #444;
+  padding-top: 1.5rem;
+  text-align: center;
+}
+
+.footer__bottom-logo {
+  height: 40px;
+}
