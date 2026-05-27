@@ -796,6 +796,14 @@ h1, h2, h3, h4,
 }
 
 
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
+  margin-bottom: 2rem;           
+}
+
 .nav-links {
   display: flex;
   gap: 2rem;
