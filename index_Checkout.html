@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Feressence - Pago</title>
+  <title>Feressence - Checkout</title>
   <link rel="stylesheet" href="css/style.css">
   <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
   <link href='https://fonts.googleapis.com/css?family=Marcellus' rel='stylesheet'>
@@ -29,8 +29,8 @@
   </nav>
 
   <!-- ===== HEADER ===== -->
-   <a href="index_Individual.html" class="back-btn">← Regresar</a>
-    <h1 class="checkout-title">FINALIZAR COMPRA</h1>
+   <a href="index_Individual.html" class="back-btn">← Go Back</a>
+    <h1 class="checkout-title">CHECKOUT</h1>
 
     <!-- ===== CONTENEDOR PRINCIPAL ===== -->
     <main class="checkout-container">
@@ -38,10 +38,10 @@
     <!-- ===== SECCIÓN 1: CUENTA ===== -->
     <div class="checkout-form">
     <section class="checkout-section account">
-      <h2 class="checkout-subtitle">1. CUENTA</h2>
-      <p>Ingresa tu correo electrónico para continuar como invitado o inicia sesión en tu cuenta personal.</p>
+      <h2 class="checkout-subtitle">1. ACCOUNT</h2>
+      <p>Enter your email to continue as a guest or log in to your personal account.</p>
       <form>
-        <label for="email">Correo electrónico</label>
+        <label for="email">Email</label>
         <input type="email" id="email" placeholder="Introduce tu correo">
         <button type="submit">CONTINUAR</button>
       </form>
@@ -49,25 +49,26 @@
 
     <!-- ===== SECCIÓN 2: MÉTODO DE ENTREGA ===== -->
     <section class="checkout-section delivery">
-      <h2  class="checkout-subtitle">2. MÉTODO DE ENTREGA</h2>
-      <p>Realizamos envíos a direcciones en todo el mundo. Todos los campos son obligatorios salvo que se indique como opcional.</p>
+      <h2  class="checkout-subtitle">2. DELIVERY METHOD</h2>
+      <p>We ship to addresses worldwide.</p>
+      <p>All fields are required unless specified optional.</p>
       <form class="delivery-form">
-        <!-- Campos de dirección -->
+        <!-- Dirección -->
         <div class="row1">
-            <input type="text" placeholder="Nombre">
-            <input type="text" placeholder="Apellido">
+            <input type="text" placeholder="First name">
+            <input type="text" placeholder="Last name">
         </div>
 
         <label>
-          <input type="checkbox"> Estoy enviando a una dirección de empresa (opcional)
+          <input type="checkbox"> I’m shipping to a bussiness address (optional).
         </label>
 
-        <input type="text" placeholder="País">
-        <input type="text" placeholder="Dirección">
+        <input type="text" placeholder="Country">
+        <input type="text" placeholder="Address">
         <div class="row2">
-            <input type="text" placeholder="Código postal">
-            <input type="text" placeholder="Estado">
-            <input type="text" placeholder="Ciudad">    
+            <input type="text" placeholder="Postal code">
+            <input type="text" placeholder="State">
+            <input type="text" placeholder="City">    
         </div>
 
         <!-- Opciones de envío -->
