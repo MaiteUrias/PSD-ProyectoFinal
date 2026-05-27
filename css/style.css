@@ -585,7 +585,7 @@ font-family: montserrat, serif;
   margin-top: 10px;
 }
 
-/* ===== TODO LO DEL ABOUT US ===== */
+/* ===== ABOUT US ===== */
 
 .aboutus {
   padding: 0;
@@ -745,7 +745,7 @@ font-family: montserrat, serif;
 }
 /* ERICK!!!! DE AQUI PARA ARRIBA ALTERE EL CSS*/
 
-/* PASTE PARA HOME PAGE Y ATRIBUTOS GENERALES, DOBLE CHEQUEO REQUERIDO */
+/* PASTE PARA HOME PAGE Y ATRIBUTOS GENERALES, DOBLE CHEQUEO */
 
 /* Fonts Globales */
 body {
@@ -801,6 +801,7 @@ h1, h2, h3, h4,
   justify-content: center;
   align-items: center;
   padding: 1rem 0;
+  border-bottom: 1px solid #ddd; 
   margin-bottom: 2rem;           
 }
 
