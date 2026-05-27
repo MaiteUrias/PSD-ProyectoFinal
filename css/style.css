@@ -880,6 +880,8 @@ footer {
   justify-content: space-between;
   gap: 2rem;
   margin-bottom: 3rem;
+  margin-left: 60px;
+  margin-right: 60px;
 }
 
 .footer__col {
@@ -953,5 +955,5 @@ footer {
 }
 
 .footer__bottom-logo {
-  height: 40px;
+  height: 25px;
 }
