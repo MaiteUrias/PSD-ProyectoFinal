@@ -966,30 +966,80 @@ input[type="radio"] {
 }
 
 /* ===== PANEL DE RESUMEN DE ORDEN ===== */
+.checkout-section h2.checkout-summary {
+  font-family: Montserrat; 
+  font-weight:  700;
+  font-size: 1.2rem;
+  text-align: left;
+  color: #000;
+
+  /* linea debajo de cada subtitulo*/
+  border-bottom: 3px solid #000;
+  padding-bottom: 1px;/* espacio entre texto y línea */
+}
+
+
 .order-summary {
   background: #f9f9f9;
   padding: 20px;
-  /*border: 1px solid #ddd;*/
+  border: 1px solid #ddd;
 }
 
 .order-summary h2 {
   font-size: 1.3rem;
   margin-bottom: 15px;
+  border-bottom: 2px solid #000;
+  padding-bottom: 5px;
 }
 
-.order-summary ul {
+.summary-list {
   list-style: none;
   padding: 0;
-  margin-bottom: 15px;
+  margin: 0 0 15px 0;
 }
 
-.order-summary ul li {
+.summary-item {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* espacio entre imagen y texto */
+  margin-bottom: 12px;
+}
+
+.summary-img {
+  width: 90px;   /* tamaño uniforme de imagen */
+  height: 90px;
+  object-fit: cover;
+}
+
+.summary-info {
+  display: flex;
+  flex-direction: column; /* apila nombre y tipo */
+  flex: 1; /* ocupa todo el espacio restante */
+  position: relative; /* permite posicionar el precio */
+}
+
+.summary-name {
+  font-size: 1rem;
+  color: #000000;
+  font-weight: bold;
+}
+
+.summary-type {
   font-size: 0.95rem;
-  margin-bottom: 8px;
   color: #333;
 }
 
-.order-summary p {
+.summary-price {
+  font-weight: bold;
+  font-size: 0.95rem;
+  color: #000;
+  position: absolute;
+  right: 0;   /* lo manda a la derecha */
+  top: 0;     /* alineado con el nombre */
+}
+
+.summary-subtotal,
+.summary-total {
   font-weight: bold;
   margin-top: 10px;
 }

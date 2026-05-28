@@ -188,20 +188,29 @@
     <!-- ===== PANEL DE RESUMEN DE ORDEN ===== -->
     <aside class="order-summary">
       <h2 class="checkout-summary">RESUMEN DE PEDIDO</h2>
-      <ul>
-        <li>COUSSINETS Eau de Parfum 100 ml - $120</li>
-        <li>GRÂCE Eau de Parfum 100 ml - $105</li>
+      <ul class="summary-list">
+        <li class="summary-item">
+          <img src="COUSSINETS.png" alt="COUSSINETS Eau de Parfum" class="summary-img">
+          <div class="summary-info">
+            <span class="summary-name">COUSSINETS</span>
+            <span class="summary-type">Eau de Parfum 100 ml</span>
+            <span class="summary-price">$120</span>
+          </div>
+        </li>
+        <li class="summary-item">
+          <img src="GRÂCE.png" alt="GRÂCE Eau de Parfum" class="summary-img">
+          <div class="summary-info">
+            <span class="summary-name">GRÂCE</span>
+            <span class="summary-type">Eau de Parfum 100 ml</span>
+            <span class="summary-price">$105</span>
+          </div>
+        </li>
       </ul>
-      <p>Subtotal: $225</p>
-      <p>Total: $225</p>
+      <p class="summary-subtotal">Subtotal: $225</p>
+      <p class="summary-total">Total: $225</p>
     </aside>
-
   </main>
-
-
-
-
-
+  
   <!-- Sliding Tab -->
   <div id="cartTab" class="slide-tab">
     <button id="closeTab" class="close-btn">✖</button>
@@ -209,7 +218,7 @@
     <p>No items yet.</p>
   </div>
 
-  <!-- ===== EL NUEVO FOOTER ===== -->
+<!-- ===== EL NUEVO FOOTER ===== -->
   <footer>
     <div class="footer__logo-row">
       <img class="footer__logo" src="Ferrecense logo_Texto Blanco.png" alt="Ferressence logo"/>
@@ -272,7 +281,6 @@
       />
     </div>
   </footer>
-  
 <script src="js/script.js"></script>
 </body>
 </html>
