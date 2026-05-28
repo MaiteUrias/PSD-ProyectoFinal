@@ -633,6 +633,17 @@ section {
   gap: 15px; /* espacio entre filas */
 }
 
+label {
+  color: #555; /* texto gris */
+  font-size: 0.95rem;
+}
+
+input[type="checkbox"] {
+  accent-color: #000; /* checkbox negro */
+  transform: scale(1.2); /* lo hace un poco más grande */
+  margin-right: 8px; /* separa el cuadro del texto */
+}
+
 .delivery-form .row1 {
   display: grid;
   grid-template-columns: 1fr 1fr; /* tres columnas iguales */
@@ -645,11 +656,159 @@ section {
   gap: 15px; /* espacio entre columnas */
 }
 
+/*shipping method*/
+.sub-sub-title {
+  font-family: Montserrat;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #000;
+  margin: 20px 0;/* espacio arriba y abajo */
+  text-align: left;/* alineado a la izquierda */
+}
+.shipping-options {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+
+.shipping-options label {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  background: #fff;
+  cursor: pointer;
+}
+
+.shipping-box {
+  display: flex;
+  justify-content: space-between;/* separa info a la izquierda y precio a la derecha */
+  align-items: center;/* centra verticalmente */
+  width: 100%;
+}
+
+input[type="radio"] {
+  accent-color: #000; /* círculo negro */
+  transform: scale(1.2);
+}
+
+.shipping-options input[type="radio"] {
+  margin-right: 40px;
+  margin-left: 30px;
+}
+
+.shipping-box {
+  display: flex;
+  justify-content: space-between;/* separa info a la izquierda y precio a la derecha */
+  align-items: center;/* centra verticalmente */
+  width: 100%;
+}
+
+.shipping-info .method {
+  font-family: 'Montserrat',sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #000;
+  letter-spacing: 1px;
+}
+
+.shipping-info {
+  font-family: 'Montserrat',sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.shipping-info .method {
+  font-family: 'Montserrat',sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+  color: #000;
+}
+
+.shipping-info .details {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.price {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.95rem;
+  font-weight: bold;
+  color: #000;
+}
+
+.shipping-box .details {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.9rem;
+  color: #555; /* texto gris */
+}
+
+.shipping-box .price {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #000; /* precio en negro */
+}
+
+.shipping-options label:hover {
+  border: 3px solid #000000;
+  background: #efeeee;/* fondo gris claro*/
+}
+
+/*Billing*/
+
+.billing-options {
+  display: flex;
+  gap: 20px;              /* espacio entre rectángulos */
+  margin: 20px 0;         /* separación arriba y abajo */
+}
+
+.billing-card {
+  flex: 1;/* que ambos ocupen el mismo ancho */
+  border: 1px solid #ccc;
+  padding: 30px;
+  text-align: center;
+  background: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.billing-icon {
+  width: 50px;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.ferrecense-logo {
+  width: 180px;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.billing-title {
+  display: block;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #000;
+}
+
 .delivery-form input {
   padding: 10px;
   border: 1px solid #ccc;
-  border-radius: 4px;
 }
+
+/* Hover: borde negro temporal */
+.billing-options label:hover .billing-card {
+  border: 3px solid #000;
+  background: #efeeee;
+}
+
+
 
 /* ===== OPCIONES DE ENVÍO Y PAGO ===== */
 .shipping-options,
@@ -664,6 +823,83 @@ section {
   font-size: 0.95rem;
   color: #333;
 }
+
+.billing-options label {
+  flex: 1;
+  cursor: pointer;
+  display: block;
+}
+
+.billing-options input[type="radio"] {
+  display: none; /* ocultar el radio */
+}
+
+.billing-card {
+  border: 1px solid #ccc;
+  padding: 30px;
+  text-align: center;
+  background: #fff;
+  transition: all 0.3s ease;
+}
+
+/* Hover: borde negro temporal */
+.billing-options label:hover .billing-card {
+  border: 3px solid #000;
+  background: #efeeee;
+}
+
+/* Checked: borde negro permanente */
+.billing-options input[type="radio"]:checked + .billing-card {
+  border: 3px solid #000;
+}
+
+.card-options {
+  display: flex;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.card-options label {
+  cursor: pointer;
+  display: block;
+}
+
+.card-options input[type="radio"] {
+  display: none; /* ocultar el radio */
+}
+
+.card-option {
+  border: 1px solid #ccc;
+  padding: 5px;
+  text-align: center;
+  background: #fff;
+  transition: all 0.3s ease;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Todas las imágenes del mismo tamaño */
+.card-option img {
+  width: 30px;   /* ancho fijo */
+  height: 16px;   /* alto fijo */
+  object-fit: contain; /* mantiene proporción dentro del cuadro */
+}
+
+/* Hover: borde negro temporal */
+.card-options label:hover .card-option {
+  border: 3px solid #000;
+  background: #efeeee;
+}
+
+/* Checked: borde negro permanente */
+.card-options input[type="radio"]:checked + .card-option {
+  border: 3px solid #000;
+  background: #f9f9f9; /* opcional */
+}
+
+
 
 /* ===== PANEL DE RESUMEN DE ORDEN ===== */
 .order-summary {

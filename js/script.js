@@ -54,3 +54,16 @@ function updateTotals() {
 attachQuantityListeners();
 attachRemoveListeners();
 updateTotals();
+
+ //Shipping y billing options
+document.querySelectorAll('.shipping-options input[type="radio"], .billing-options input[type="radio"]').forEach(radio => {
+  radio.addEventListener('change', () => {
+    // quitar clase activa de todos los labels
+    document.querySelectorAll('.shipping-options label, .billing-options label').forEach(label => {
+      label.classList.remove('active');
+    });
+    // añadir clase activa al label seleccionado
+    radio.closest('label').classList.add('active');
+  });
+});
+
