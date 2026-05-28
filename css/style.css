@@ -966,7 +966,7 @@ input[type="radio"] {
 }
 
 /* ===== PANEL DE RESUMEN DE ORDEN ===== */
-.checkout-section h2.checkout-summary {
+.order-summary h2.checkout-summary {
   font-family: Montserrat; 
   font-weight:  700;
   font-size: 1.2rem;
@@ -980,7 +980,7 @@ input[type="radio"] {
 
 
 .order-summary {
-  background: #f9f9f9;
+  background: #ffffff;
   padding: 20px;
   border: 1px solid #ddd;
 }
@@ -1002,7 +1002,8 @@ input[type="radio"] {
   display: flex;
   align-items: center;
   gap: 15px; /* espacio entre imagen y texto */
-  margin-bottom: 12px;
+  margin-bottom: 30px;
+  margin-top: 30px;
 }
 
 .summary-img {
@@ -1027,6 +1028,7 @@ input[type="radio"] {
 .summary-type {
   font-size: 0.95rem;
   color: #333;
+  line-height: 20px;
 }
 
 .summary-price {
@@ -1034,14 +1036,42 @@ input[type="radio"] {
   font-size: 0.95rem;
   color: #000;
   position: absolute;
-  right: 0;   /* lo manda a la derecha */
-  top: 0;     /* alineado con el nombre */
+  right: 0;/* lo manda a la derecha */
+  bottom: 0;/* alineado hacia abajo */
 }
 
-.summary-subtotal,
-.summary-total {
+.summary-total-card {
+  background: #f1f1f1;              /* fondo negro */
+  color: #000000;                   /* texto blanco */
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.summary-row {
+  display: flex;
+  justify-content: space-between;/* etiqueta a la izquierda, monto a la derecha */
+  margin-bottom: 12px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/*carta del totL*/
+.summary-row.total {
+  border-top: 2px solid #b4b4b4;/* línea separadora arriba del total */
+  padding-top: 12px;
+  margin-bottom: 0px;
+  font-size: 1.2rem;
   font-weight: bold;
-  margin-top: 10px;
+}
+
+.summary-row .label {
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 1px;
+  font-size: 0.8rem;
+}
+
+.summary-row .amount {
+  font-weight: bold;
+  font-size: 0.8rem;
 }
 
 /* ===== ABOUT US ===== */
