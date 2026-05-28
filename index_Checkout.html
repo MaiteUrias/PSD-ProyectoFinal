@@ -125,8 +125,10 @@
           </label>
         </div>
 
-
-        <p>Aceptamos los siguentes metodos de pago:</p>
+        <label>
+          <input type="checkbox" style="margin-bottom: 0px; margin-top: 50px;"> My billing address is the same as my shipping address (optional).
+        </label>
+        <p class="note" style="font-size: 1rem;">We accept the following payment methods:</p>
         <div class="card-options">
           <label>
             <input type="radio" name="card" checked>
@@ -151,15 +153,33 @@
         </div>
 
         <!-- Campos de tarjeta -->
-        <input type="text" placeholder="Nombre en la tarjeta">
-        <input type="text" placeholder="Número de tarjeta">
-        <input type="text" placeholder="Fecha de expiración (MM/AA)">
-        <input type="text" placeholder="Código de seguridad">
-        <input type="text" placeholder="Código de país (+52)">
-        <input type="text" placeholder="Teléfono">
+        <form class="billing-form">
+          <input type="text" placeholder="Name on card">
+          <input type="text" placeholder="Card number">
+          
+          <p class="note">Expiration Date</p>
+          <div class="row">
+            <input type="text" placeholder="Month">
+            <input type="text" placeholder="Year">
+          </div>
+          <div class="row">
+            <input type="text" placeholder="Security code">
+          </div>
 
-        <button type="submit">REALIZAR PEDIDO</button>
-        <p>Al realizar un pedido, acepto la Política de Privacidad y el Aviso Legal de Ferressence.</p>
+          <p class="note">Country code</p>
+          <div class="row">
+            <input type="text" placeholder="+52 (MEX)">
+            <input type="text" placeholder="Telephone">
+          </div>
+
+          <p class="billing-note">*The tax shown during checkout is an estimate and will be finalized once your order is charged. By placing an order, you consent to a pre-authorization charge of up to $1 over the estimated tax amount. You will only be charged the final tax amount.
+          <br><br>
+            Please review your order carefully. Review your order summary before placing your order. There may be previously saved items in your bag.</p>
+
+          <button type="submit">PLACE ORDER</button>
+        </form>
+
+        <p>By placing an order, I agree to ©Ferressence Privacy Policy and Legal Statement.</p>
         </form>   
         </section>
     </section>

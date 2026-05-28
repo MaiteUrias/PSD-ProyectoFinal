@@ -602,10 +602,21 @@ section {
   gap: 12px;
 }
 
+.checkout-section .row {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* dos columnas iguales */
+  gap: 15px; /* espacio entre columnas */
+}
+
 .checkout-section input[type="text"],
 .checkout-section input[type="email"] {
-  padding: 10px;
-  /*border: 1px solid #ccc;*/
+  padding: 12px;              /* mismo padding que Delivery */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.95rem;
+  width: 100%;                /* ocupa todo el ancho */
+  box-sizing: border-box;
 }
 
 .checkout-section button {
@@ -759,31 +770,35 @@ input[type="radio"] {
 }
 
 /*Billing*/
-
 .billing-options {
   display: flex;
-  gap: 20px;              /* espacio entre rectángulos */
-  margin: 20px 0;         /* separación arriba y abajo */
+  gap: 14px;              /* espacio entre rectángulos */
+  font-size: 0.8rem;
 }
 
 .billing-card {
-  flex: 1;/* que ambos ocupen el mismo ancho */
   border: 1px solid #ccc;
   padding: 30px;
   text-align: center;
   background: #fff;
   cursor: pointer;
   transition: all 0.3s ease;
+  width: 140px;/* ancho fijo más pequeño */
+  height: 60px;/* alto fijo más pequeño */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .billing-icon {
-  width: 50px;
+  width: 35px;
   height: auto;
   margin-bottom: 15px;
 }
 
 .ferrecense-logo {
-  width: 180px;
+  width: 100px;
   height: auto;
   margin-bottom: 15px;
 }
@@ -791,7 +806,7 @@ input[type="radio"] {
 .billing-title {
   display: block;
   font-family: 'Montserrat', sans-serif;
-  font-size: 1rem;
+  font-size: 0.8rem;
   font-weight: bold;
   text-transform: uppercase;
   color: #000;
@@ -825,21 +840,12 @@ input[type="radio"] {
 }
 
 .billing-options label {
-  flex: 1;
   cursor: pointer;
   display: block;
 }
 
 .billing-options input[type="radio"] {
   display: none; /* ocultar el radio */
-}
-
-.billing-card {
-  border: 1px solid #ccc;
-  padding: 30px;
-  text-align: center;
-  background: #fff;
-  transition: all 0.3s ease;
 }
 
 /* Hover: borde negro temporal */
@@ -853,10 +859,13 @@ input[type="radio"] {
   border: 3px solid #000;
 }
 
+/* Tarjetas*/
 .card-options {
   display: flex;
   gap: 15px;
   margin: 20px 0;
+  margin-top: 0px;
+  margin-bottom: 5px
 }
 
 .card-options label {
@@ -899,7 +908,62 @@ input[type="radio"] {
   background: #f9f9f9; /* opcional */
 }
 
+.billing-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* espacio entre filas */
+}
 
+.billing-form .row {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* dos columnas iguales */
+  gap: 15px; /* espacio entre columnas */
+}
+
+.billing-form input[type="text"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.95rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.billing-form button {
+  background: #000;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  font-family: 'Marcellus', serif;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  width: 200px;
+}
+
+.billing-form button:hover {
+  background: #fff;
+  color: #000;
+  border: 2px solid #000;
+}
+
+.checkout-section .billing-note {
+  font-size: 0.6rem;
+  color: #555;
+  margin-top: 10px;
+  line-height: 1.4;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.checkout-section .note {
+  font-size: 0.8rem;
+  color: #555;
+  margin-top: 2px;
+  margin-bottom: 0px;
+  line-height: 1.4;
+  font-family: 'Montserrat', sans-serif;
+}
 
 /* ===== PANEL DE RESUMEN DE ORDEN ===== */
 .order-summary {
