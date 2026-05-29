@@ -13,10 +13,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const step2 = document.getElementById("step2");
   const step3 = document.getElementById("step3");
 
-  // ==========================================
-  // FLUJO INDIVIDUAL: PASO A PASO
-  // ==========================================
 
+  // PASO A PASO
   // Paso 1 → Paso 2 (Botón Continue del Paso 1)
   const btnStep1 = document.getElementById("btnStep1");
   if (btnStep1) {
@@ -45,9 +43,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // ==========================================
-  // VALIDACIÓN GLOBAL: AL PRESIONAR PLACE ORDER
-  // ==========================================
+  // VALIDACIÓN GLOBAL AL PRESIONAR PLACE ORDER
   const btnPlaceOrder = document.getElementById("btnPlaceOrder");
   if (btnPlaceOrder) {
     btnPlaceOrder.addEventListener("click", () => {
@@ -72,11 +68,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
       // --- COMPROBACIÓN FINAL ---
       if (isStep1Valid && isStep2Valid && isStep3Valid) {
-        // ✅ Todo el checkout es válido
+        // Todo el checkout es válido
         console.log("¡Checkout completo y validado exitosamente!");
         window.location.href = "index_Confirmation.html";
       } else {
-        // ❌ Algo falta. Buscamos el primer error para mover la pantalla y alertar
+        // Busca el primer error para mover la pantalla y alertar
         console.warn("No se puede colocar la orden: Existen campos vacíos o inválidos.");
 
         if (!isStep1Valid && step1Form) {
