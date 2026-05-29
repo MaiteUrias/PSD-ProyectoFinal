@@ -1092,6 +1092,14 @@ input[type="radio"] {
   font-size: 0.8rem;
 }
 
+input:invalid:user-invalid {
+  border: 2px solid red;
+}
+
+.show-error:invalid {
+  border: 2px solid red;
+}
+
 /* ===== ABOUT US ===== */
 
 .aboutus {
