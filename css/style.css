@@ -2,6 +2,11 @@
 @import url('https://googleapis.com');
 @import url('https://fonts.googleapis.com/css2?family=Marcellus&family=Montserrat:wght@300;400;700&display=swap');
 
+
+html {
+  scroll-behavior: smooth;
+}
+
 /* Fonts Globales */
 body {
   font-family: 'Montserrat', sans-serif;
@@ -772,7 +777,7 @@ input[type="radio"] {
 /*Billing*/
 .billing-options {
   display: flex;
-  gap: 14px;              /* espacio entre rectángulos */
+  gap: 14px;/* espacio entre rectángulos */
   font-size: 0.8rem;
 }
 
@@ -823,6 +828,17 @@ input[type="radio"] {
   background: #efeeee;
 }
 
+.card-fields input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.95rem;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 6px;
+ }
 
 
 /* ===== OPCIONES DE ENVÍO Y PAGO ===== */

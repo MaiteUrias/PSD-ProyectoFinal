@@ -66,4 +66,3 @@ document.querySelectorAll('.shipping-options input[type="radio"], .billing-optio
     radio.closest('label').classList.add('active');
   });
 });
-
