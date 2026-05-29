@@ -111,6 +111,8 @@ section {
   transition: right 0.3s ease;
   padding: 1rem;
   overflow-y: auto;
+
+  z-index: 9999;
 }
 
 .slide-tab.open {
