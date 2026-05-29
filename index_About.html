@@ -2,23 +2,27 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Feressence - Listado de Productos</title>
+  <title>Ferressence - Home</title>
+  <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
-  <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
-  <link href='https://fonts.googleapis.com/css?family=Marcellus' rel='stylesheet'>
 </head>
 <body>
-    <!-- Los iconos son placeholders-->
+
   <header class="top-bar">
     <div class="profile-icon">👤</div>
+    
+    <div class="logo">
+      <img src="Ferrecense logo_Cafe.png" alt="Feressence Logo">
+    </div>
+    
     <div class="icons">
       <span class="icon search">🔍</span>
       <span class="icon favorites">❤️</span>
       <span class="icon cart" id="cartBtn">🛍️</span>
     </div>
   </header>
-  
-  <!-- botons de navegacion -->
+
+  <!-- Botones Nav -->
   <nav class="navbar">
     <ul class="nav-links">
       <li><a href="index_Home.html">HOME</a></li>
@@ -27,6 +31,51 @@
       <li><a href="index_About.html">ABOUT US</a></li>
     </ul>
   </nav>
+
+  <!-- Shopping Bag Slide -->
+  <div id="cartTab" class="slide-tab">
+    <button id="closeTab" class="close-btn">✖</button>
+    <h3>Your Shopping Bag</h3>
+
+    <div class="cart-items">
+      <div class="cart-item">
+        <img src="COUSSINETS.png" alt="Coussinets Eau de Parfum">
+        <div class="item-info">
+          <h4>COUSSINETS Eau de Parfum 100 ml</h4>
+          <p>$120</p>
+          <div class="quantity-controls">
+            <button class="qty-btn">-</button>
+            <span class="qty">1</span>
+            <button class="qty-btn">+</button>
+          </div>
+          <button class="remove-btn">Remove</button>
+        </div>
+      </div>
+
+      <div class="cart-item">
+        <img src="GRÂCE.png" alt="Grâce Eau de Parfum">
+        <div class="item-info">
+          <h4>GRÂCE Eau de Parfum 100 ml</h4>
+          <p>$105</p>
+          <div class="quantity-controls">
+            <button class="qty-btn">-</button>
+            <span class="qty">2</span>
+            <button class="qty-btn">+</button>
+          </div>
+          <button class="remove-btn">Remove</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="cart-summary">
+      <p>Subtotal: <span id="subtotal">$225</span></p>
+      <p>Taxes: --</p>
+      <p>Delivery method: --</p>
+      <p><strong>Total: <span id="total">$225</span></strong></p>
+      <button class="purchase-btn" onclick="location.href='index_Checkout.html'">PURCHASE</button>
+    </div>
+  </div>
+
 
   <!-- HERO IMAGE -->
 <section class="about-hero">
@@ -41,7 +90,7 @@
 <!-- MISSION -->
 <section class="mission">
   <!-- el logo real va aqui... -->
-  <img src="logo.png" alt="logo" class="mission-logo">
+  <img src="Ferrecense logo_Cafe.png" alt="logo" class="mission-logo">
 
   <h2>OUR MISSION</h2>
   <h3>SINCE 1988</h3>
@@ -135,49 +184,67 @@
 
 </section>
 
- <!-- el footer negro de abajo que teniamos que agarra un monton de espacio la neta que loco no? -->
-  <footer class="site-footer">
-    <div class="footer-container">
-      <div class="footer-column">
-        <h4>HELP</h4>
-        <ul>
-          <li><a href="#">FAQs</a></li>
-          <li><a href="#">Product Care</a></li>
-          <li><a href="#">Stores</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-column">
-        <h4>SERVICES</h4>
-        <ul>
-          <li><a href="#">Repairs</a></li>
-          <li><a href="#">Personalization</a></li>
-          <li><a href="#">Art of Gifting</a></li>
-          <li><a href="#">Download our Apps</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-column">
-        <h4>ABOUT FERRESSENCE</h4>
-        <ul>
-          <li><a href="#">Environmental Impact</a></li>
-          <li><a href="#">Sustainability</a></li>
-          <li><a href="#">Latest News</a></li>
-          <li><a href="#">Foundation Ferressence</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-column">
-        <h4>EMAIL AND SMS SIGN-UP</h4>
-        <p>Subscribe for exclusive email and SMS updates and receive the latest news from Ferressence, including new arrivals and exclusive collections.</p>
-        <form class="signup-form">
-          <input type="email" placeholder="Enter your email">
-          <button type="submit">Sign Up</button>
-        </form>
-      </div>
+  <!-- ===== EL NUEVO FOOTER ===== -->
+  <footer>
+    <div class="footer__logo-row">
+      <img class="footer__logo" src="Ferrecense logo_Texto Blanco.png" alt="Ferressence logo"/>
     </div>
 
-      <p>&copy; 2026 Ferressence | All rights reserved</p>
+    <div class="footer__columns">
+
+      <!-- HELP -->
+      <div class="footer__col">
+        <h3 class="footer__col-title">HELP</h3>
+        <ul class="footer__col-links">
+          <li><a href="#" class="footer__link">FAQs</a></li>
+          <li><a href="#" class="footer__link">Product Care</a></li>
+          <li><a href="#" class="footer__link">Stores</a></li>
+        </ul>
+      </div>
+
+      <!-- SERVICES -->
+      <div class="footer__col">
+        <h3 class="footer__col-title">SERVICES</h3>
+        <ul class="footer__col-links">
+          <li><a href="#" class="footer__link">Repairs</a></li>
+          <li><a href="#" class="footer__link">Personalization</a></li>
+          <li><a href="#" class="footer__link">Art of Gifting</a></li>
+          <li><a href="#" class="footer__link">Download our Apps</a></li>
+        </ul>
+      </div>
+
+      <!-- ABOUT FERRESSENCE -->
+      <div class="footer__col">
+        <h3 class="footer__col-title">ABOUT FERRESSENCE</h3>
+        <ul class="footer__col-links">
+          <li><a href="#" class="footer__link">Environmental Impact</a></li>
+          <li><a href="#" class="footer__link">Sustainability</a></li>
+          <li><a href="#" class="footer__link">Latest News</a></li>
+          <li><a href="#" class="footer__link">Foundation Ferressence</a></li>
+        </ul>
+      </div>
+
+      <!-- EMAIL AND SMS SIGN-UP -->
+      <div class="footer__col">
+        <h3 class="footer__col-title">EMAIL AND SMS SIGN-UP</h3>
+        <p class="footer__subscribe-text">
+          Subscribe for exclusive email and SMS updates and receive the latest
+          news from Ferressence, including new arrivals and exclusive
+          collections.
+        </p>
+        <p class="footer__follow-title">Follow Us</p>
+        <div class="footer__socials">
+          <img class="footer__social" src="Facebook.png" alt="Facebook"/>
+          <img class="footer__social" src="instagram.png" alt="Instagram"/>
+          <img class="footer__social" src="X.png" alt="Twitter / X"/>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer__bottom">
+      <img class="footer__bottom-logo" src="Ferrecense logo_Texto Blanco.png" alt="Ferressence"
+      />
     </div>
   </footer>
 

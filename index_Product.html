@@ -2,23 +2,27 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Feressence - Listado de Productos</title>
+  <title>Ferressence - Home</title>
+  <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
-  <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
-  <link href='https://fonts.googleapis.com/css?family=Marcellus' rel='stylesheet'>
 </head>
 <body>
-    <!-- Los iconos son placeholders-->
+
   <header class="top-bar">
     <div class="profile-icon">👤</div>
+    
+    <div class="logo">
+      <img src="Ferrecense logo_Cafe.png" alt="Feressence Logo">
+    </div>
+    
     <div class="icons">
       <span class="icon search">🔍</span>
       <span class="icon favorites">❤️</span>
       <span class="icon cart" id="cartBtn">🛍️</span>
     </div>
   </header>
-  
-  <!-- botons de navegacion -->
+
+  <!-- Botones Nav -->
   <nav class="navbar">
     <ul class="nav-links">
       <li><a href="index_Home.html">HOME</a></li>
@@ -27,6 +31,50 @@
       <li><a href="index_About.html">ABOUT US</a></li>
     </ul>
   </nav>
+
+   <!-- Shopping Bag Slide -->
+  <div id="cartTab" class="slide-tab">
+    <button id="closeTab" class="close-btn">✖</button>
+    <h3>Your Shopping Bag</h3>
+
+    <div class="cart-items">
+      <div class="cart-item">
+        <img src="COUSSINETS.png" alt="Coussinets Eau de Parfum">
+        <div class="item-info">
+          <h4>COUSSINETS Eau de Parfum 100 ml</h4>
+          <p>$120</p>
+          <div class="quantity-controls">
+            <button class="qty-btn">-</button>
+            <span class="qty">1</span>
+            <button class="qty-btn">+</button>
+          </div>
+          <button class="remove-btn">Remove</button>
+        </div>
+      </div>
+
+      <div class="cart-item">
+        <img src="GRÂCE.png" alt="Grâce Eau de Parfum">
+        <div class="item-info">
+          <h4>GRÂCE Eau de Parfum 100 ml</h4>
+          <p>$105</p>
+          <div class="quantity-controls">
+            <button class="qty-btn">-</button>
+            <span class="qty">2</span>
+            <button class="qty-btn">+</button>
+          </div>
+          <button class="remove-btn">Remove</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="cart-summary">
+      <p>Subtotal: <span id="subtotal">$225</span></p>
+      <p>Taxes: --</p>
+      <p>Delivery method: --</p>
+      <p><strong>Total: <span id="total">$225</span></strong></p>
+      <button class="purchase-btn" onclick="location.href='index_Checkout.html'">PURCHASE</button>
+    </div>
+  </div>
 
     <!-- BANNER-->
   <section class="hero">
