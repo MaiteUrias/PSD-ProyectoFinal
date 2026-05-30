@@ -160,4 +160,55 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     }
   }
+
+  // 1. Guardar los datos del carrito justo antes de que la página se recargue
+  window.addEventListener("beforeunload", () => {
+    const items = [];
+    document.querySelectorAll(".cart-item").forEach(item => {
+      items.push({
+        name: item.querySelector("h4").textContent.replace(" Eau de Parfum 100 ml", "").trim(),
+        qty: parseInt(item.querySelector(".qty").textContent),
+        price: parseFloat(item.querySelector("p").textContent.replace("$", ""))
+      });
+    });
+    localStorage.setItem("carrito_ferressence", JSON.stringify(items));
+  });
+
+  // 2. Dibujar el Order Summary si estamos en el Checkout
+  const summaryList = document.querySelector(".summary-list");
+  if (summaryList) {
+    const datosGuardados = localStorage.getItem("carrito_ferressence");
+    if (datosGuardados) {
+      const listaProductos = JSON.parse(datosGuardados);
+      
+      // Limpiamos los productos estáticos del HTML
+      summaryList.innerHTML = ""; 
+      let subtotal = 0;
+
+      listaProductos.forEach((prod, index) => {
+        const totalProducto = prod.price * prod.qty;
+        subtotal += totalProducto;
+
+        // Insertar el producto formateado
+        summaryList.innerHTML += `
+          <li class="summary-item">
+            <img src="${prod.name.toUpperCase()}.png" alt="${prod.name}" class="summary-img">
+            <div class="summary-info">
+              <span class="summary-name">${prod.name} ${prod.qty > 1 ? `(x${prod.qty})` : ''}</span>
+              <span class="summary-type">Eau de Parfum <br>100 ml</span>
+              <span class="summary-price">$${totalProducto}</span>
+            </div>
+          </li>
+        `;
+        if (index < listaProductos.length - 1) summaryList.innerHTML += "<hr>";
+      });
+
+      // Actualizar los textos de la tarjeta de totales
+      const amounts = document.querySelectorAll(".summary-total-card .amount");
+      if (amounts.length >= 4) {
+        amounts[0].textContent = `$${subtotal}`; // Subtotal
+        amounts[3].textContent = `$${subtotal}`; // Total (asumiendo envío gratis por defecto)
+      }
+    }
+  }
 });
