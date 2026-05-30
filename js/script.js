@@ -161,6 +161,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
+  // Actualizar order summary
   // 1. Guardar los datos del carrito justo antes de que la página se recargue
   window.addEventListener("beforeunload", () => {
     const items = [];
@@ -212,3 +213,21 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 });
+
+//--- PRODUCT LISTING ---
+// Redireccion
+const productGrid = document.querySelector('.product-list .grid');
+
+  if (productGrid) {
+    productGrid.addEventListener('click', (e) => {
+      // Verificamos que esté dentro de una tarjeta de producto
+      if (e.target.closest('.product-card')) {
+        
+        // El clic es válido solo si es la imagen (IMG) o el título (H3)
+        if (e.target.tagName === 'IMG' || e.target.tagName === 'H3') {
+          window.location.href = 'index_Individual.html';
+        }
+        
+      }
+    });
+  }

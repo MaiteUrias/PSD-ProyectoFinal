@@ -436,6 +436,7 @@ section {
 }
 
 .product-card h3 {
+  font-family: Montserrat; 
   font-size: 1.2rem;
   margin-bottom: 8px;
 }
@@ -501,10 +502,6 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.star:hover{
-  background: #F2F1F8;
 }
 
 /* ERICK!!!! DE AQUI EN ADELANTE ALTERE EL CSS*/
