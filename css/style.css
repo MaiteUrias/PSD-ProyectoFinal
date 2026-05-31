@@ -46,7 +46,7 @@ h1, h2, h3, h4,
 }
 
 .top-bar .logo img {
-  height: 90px; /* adjust size as needed */
+  height: 90px; 
   display: inline-block;
 }
 
@@ -375,6 +375,47 @@ section {
 
 .social:hover {
   color: #ccc;
+}
+
+
+/* Homepage BGs */
+.fragrance {
+  background-image: url("Botellas_BG.png"); 
+  background-size: cover;
+  background-position: center;
+  color: #fff; /* texto visible */
+}
+
+.story {
+  background-image: url("ferretHOME.jpg"); 
+  background-size: cover;
+  background-position: center;
+  color: #fff; /* texto visible */
+}
+
+.ingredients {
+  background-image: url("florHOME.jpg"); 
+  background-size: cover;
+  background-position: center;
+  color: #fff; /* texto visible */
+}
+
+/* Overlay */
+.fragrance::before,
+.story::before,
+.ingredients::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.3); /* darkens background slightly */
+  z-index: 0;
+}
+
+.fragrance h2, .fragrance .read-more,
+.story h2, .story .read-more,
+.ingredients h2, .ingredients .read-more {
+  position: relative;
+  z-index: 1; /* keeps text above overlay */
 }
 
 /* ===== BANNER PRODUCT LISTING===== */
