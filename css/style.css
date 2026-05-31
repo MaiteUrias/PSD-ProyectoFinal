@@ -31,8 +31,15 @@ h1, h2, h3, h4,
   background: #fff;
 }
 
+.top-bar {
+  margin:20px;
+}
+
+/* Contenedor del perfil a la izquierda */
 .profile-icon {
-  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
 }
 
@@ -46,14 +53,38 @@ h1, h2, h3, h4,
   display: inline-block;
 }
 
-.icons {
-  display: flex;
-  gap: 1rem;
+/* Ajustar las imágenes de los iconos (Perfil, Lupa, Bolsa) */
+.profile-icon img,
+.icons .icon img {
+  width: 24px;         /* Define el ancho exacto que deseas */
+  height: 24px;        /* Define el alto exacto para mantener simetría */
+  object-fit: contain; /* Evita que la imagen se deforme */
+  display: block;
 }
 
+/* Contenedor del grupo de iconos derecho */
+.icons {
+  display: flex;
+  align-items: center; /* Alinea horizontalmente todos los iconos en su eje central */
+  gap: 2rem;
+}
+
+/* Comportamiento base de cada icono individual */
 .icons .icon {
   cursor: pointer;
-  position: relative; /* importante para posicionar el tooltip relativo al icono de favoritos */
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;         /* Caja del mismo ancho que las imágenes */
+  height: 24px;        /* Caja del mismo alto que las imágenes */
+}
+
+/* Ajustar el icono de la estrella para que iguale a las imágenes */
+.icons .favorites {
+  font-size: 39px;/* Mismo tamaño que las imágenes */
+  line-height: 1;/* Evita espacios extra por el alto de línea nativo */
+  color: #000000;
 }
 
 /* Estilos base para el cuadro flotante */
@@ -71,7 +102,7 @@ h1, h2, h3, h4,
   
   /* Posicionamiento justo debajo del icono */
   position: absolute;
-  top: 130%;
+  top: 160%;
   left: 50%;
   transform: translateX(-50%);
   z-index: 10000;/* Asegura que flote por encima de todo */
