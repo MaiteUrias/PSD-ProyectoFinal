@@ -391,16 +391,7 @@ section {
 .story     { background-image: url("ferretHOME.jpg"); }
 .ingredients { background-image: url("florHOME.jpg"); }
 
-/* Overlay */
-.fragrance::before,
-.story::before,
-.ingredients::before {
-  content: "";
-  position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background: rgba(0,0,0,0.3);
-  z-index: 0;
-}
+
 
 .fragrance h2, .fragrance .read-more,
 .story h2, .story .read-more,
