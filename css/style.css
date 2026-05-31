@@ -378,51 +378,59 @@ section {
 }
 
 
-/* Homepage BGs */
-.fragrance {
-  background-image: url("../Botellas_BG.png");
+/* Homepage Sections with Backgrounds */
+.fragrance, .story, .ingredients {
+  position: relative;
+  min-height: 500px;        /* adjust height, or use 100vh for full screen */
   background-size: cover;
   background-position: center;
-  min-height: 500px;   /* ensures image space */
-  position: relative;  /* required for overlay */
   color: #fff;
+  display: flex;            /* flexbox for alignment */
+  flex-direction: column;
+  justify-content: flex-end; /* push content to bottom */
+  align-items: center;       /* center horizontally */
+  padding-bottom: 40px;      /* space from bottom edge */
+}
+
+/* Individual background images */
+.fragrance {
+  background-image: url("../Botellas_BG.png");
 }
 
 .story {
   background-image: url("../ferretHOME.jpg");
-  background-size: cover;
-  background-position: center;
-  min-height: 500px;
-  position: relative;
-  color: #fff;
 }
 
 .ingredients {
   background-image: url("../florHOME.jpg");
-  background-size: cover;
-  background-position: center;
-  min-height: 500px;
-  position: relative;
-  color: #fff;
 }
 
-/* Overlay */
+/* Overlay for readability */
 .fragrance::before,
 .story::before,
 .ingredients::before {
   content: "";
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
-  background: rgba(0,0,0,0.3);
+  background: rgba(0,0,0,0.3); /* semi-transparent dark layer */
   z-index: 0;
 }
 
+/* Ensure text/buttons sit above overlay */
 .fragrance h2, .fragrance .read-more,
 .story h2, .story .read-more,
 .ingredients h2, .ingredients .read-more {
   position: relative;
   z-index: 1;
+  margin-bottom: 15px; /* spacing above button */
 }
+
+.fragrance .read-more,
+.story .read-more,
+.ingredients .read-more {
+  margin-bottom: 0;
+}
+
 
 /* ===== BANNER PRODUCT LISTING===== */
 .hero {
