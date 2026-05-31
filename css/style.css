@@ -135,7 +135,7 @@ h1, h2, h3, h4,
 
 .nav-links {
   display: flex;
-  gap: 2rem;
+  gap: 12rem;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -148,7 +148,9 @@ h1, h2, h3, h4,
 }
 
 .nav-links a:hover {
-  text-decoration: underline;
+  text-decoration: none;/* Quita el subrayado común */
+  border-bottom: 4px solid #000;/* Crea la línea negra debajo */
+  padding-bottom: 4px;/* Espacio controlado entre el texto y la línea */
 }
 
 /* Secciones */
@@ -1185,6 +1187,8 @@ input:invalid:user-invalid {
 
 .aboutus {
   padding: 0;
+  margin: 0;
+  height: auto;
 }
 
 .about-hero {
@@ -1192,12 +1196,15 @@ input:invalid:user-invalid {
   width: 100%;
   height: 700px;
   overflow: hidden;
+  margin-top: -96px;
 }
 
 .about-hero img {
   width: 100%;
-  height: 100%;
+  height: 80%;
   object-fit: cover;
+  object-position: center 30%;
+  display: block;
 }
 
 .about-overlay {
@@ -1221,14 +1228,21 @@ input:invalid:user-invalid {
 }
 
 .mission {
-  background: #f4f4f4;
+  background: #ffffff;
   padding-top: 60px;
   padding-bottom: 40px;
+  margin-top: -180px
 }
 
 .mission-logo {
   width: 80px;
   margin-bottom: 20px;
+}
+
+.mission-logo2{
+  width: 60px;
+  margin-bottom: 0px;
+  margin-top: 70px;
 }
 
 .mission h2 {
@@ -1258,7 +1272,7 @@ input:invalid:user-invalid {
   justify-content: center;
   gap: 40px;
   padding: 60px 80px;
-  background: #f4f4f4;
+  background: #ffffff;
 }
 
 .about-card {
@@ -1302,7 +1316,7 @@ input:invalid:user-invalid {
 /* Los resources */
 
 .resources {
-  background: #f4f4f4;
+  background: #ffffff;
   padding-bottom: 100px;
 }
 
