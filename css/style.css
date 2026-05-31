@@ -53,8 +53,48 @@ h1, h2, h3, h4,
 
 .icons .icon {
   cursor: pointer;
+  position: relative; /* importante para posicionar el tooltip relativo al icono de favoritos */
 }
 
+/* Estilos base para el cuadro flotante */
+.tooltip-counter {
+  visibility: hidden;/* Oculto por defecto */
+  opacity: 0;
+  background-color: #000000;
+  color: #ffffff;
+  text-align: center;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.8rem;
+  white-space: nowrap;/* Evita que el texto se rompa en varias líneas */
+  
+  /* Posicionamiento justo debajo del icono */
+  position: absolute;
+  top: 130%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10000;/* Asegura que flote por encima de todo */
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+/* Efecto Hover: Al pasar el cursor sobre el icono, se muestra el tooltip */
+.icons .favorites:hover .tooltip-counter {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Pequeño triángulo apuntando hacia arriba */
+.tooltip-counter::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent #000000 transparent;
+}
 
 .navbar {
   display: flex;
@@ -488,7 +528,7 @@ section {
 .product-card.new .stars {
   position: absolute;
   top: 659px;
-  left: 52git0px; 
+  left: 520px; 
   transform: none; /* elimina el translate que la sacaba */
 }
 
@@ -502,6 +542,22 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+/* Cuando la estrella esté activa, cambiará a estrella rellena */
+.star.active {
+  color: #000; /* Asegura que el relleno sea negro */
+}
+
+.star.active::before {
+  content: "★"; /* Inserta la estrella rellena */
+  position: absolute;
+}
+
+/* Ocultamos el texto original (☆) solo cuando esté activa para que no se superpongan */
+.star.active {
+  color: transparent; 
+  text-shadow: 0 0 0 #000; /* Mantiene el color negro de la nueva estrella ★ */
 }
 
 /* ERICK!!!! DE AQUI EN ADELANTE ALTERE EL CSS*/

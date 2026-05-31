@@ -231,3 +231,33 @@ const productGrid = document.querySelector('.product-list .grid');
       }
     });
   }
+ 
+// Contador de estrellas
+document.addEventListener("DOMContentLoaded", () => {
+  const stars = document.querySelectorAll(".star");
+  const favCounter = document.getElementById("favCounter");
+
+  // Función interna para actualizar el texto del contador en el menú
+  function updateFavoriteCount() {
+    // Cuenta cuántas estrellas tienen actualmente la clase 'active'
+    const activeStarsCount = document.querySelectorAll(".star.active").length;
+    
+    // Cambia el texto dependiendo de la cantidad
+    if (activeStarsCount === 1) {
+      favCounter.textContent = `${activeStarsCount} favorito`;
+    } else {
+      favCounter.textContent = `${activeStarsCount} favoritos`;
+    }
+  }
+
+  // Manejo de clics en las estrellas
+  stars.forEach(star => {
+    star.addEventListener("click", () => {
+      // Alterna la clase active (rellena/vacía la estrella)
+      star.classList.toggle("active");
+      
+      // Llama a la función para recalcular e imprimir el total en el menú
+      updateFavoriteCount();
+    });
+  });
+});
