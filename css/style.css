@@ -378,21 +378,21 @@ section {
 }
 
 
-/* Homepage Sections with Backgrounds */
+/* Homepage Backgrounds */
 .fragrance, .story, .ingredients {
   position: relative;
-  min-height: 500px;        /* adjust height, or use 100vh for full screen */
+  min-height: 500px;        /* 100vh full screen */
   background-size: cover;
   background-position: center;
   color: #fff;
-  display: flex;            /* flexbox for alignment */
+  display: flex;            /* alignment */
   flex-direction: column;
-  justify-content: flex-end; /* push content to bottom */
-  align-items: center;       /* center horizontally */
-  padding-bottom: 40px;      /* space from bottom edge */
+  justify-content: flex-end; /* texto al pie de la imagen */
+  align-items: center;       /* centrado */
+  padding-bottom: 40px;      /* para que no se pegue al fondo */
 }
 
-/* Individual background images */
+/* imagenes de background */
 .fragrance {
   background-image: url("../Botellas_BG.png");
 }
@@ -405,24 +405,24 @@ section {
   background-image: url("../florHOME.jpg");
 }
 
-/* Overlay for readability */
+/* Overlay */
 .fragrance::before,
 .story::before,
 .ingredients::before {
   content: "";
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
-  background: rgba(0,0,0,0.3); /* semi-transparent dark layer */
+  background: rgba(0,0,0,0.3); /* layer semi transparente como en figma (no se si se nota) */
   z-index: 0;
 }
 
-/* Ensure text/buttons sit above overlay */
+/* botones permanecen arriba del overlay Y DE LAS IMAGENES OSIOSIS */
 .fragrance h2, .fragrance .read-more,
 .story h2, .story .read-more,
 .ingredients h2, .ingredients .read-more {
   position: relative;
   z-index: 1;
-  margin-bottom: 15px; /* spacing above button */
+  margin-bottom: 15px; /* espaciado */
 }
 
 .fragrance .read-more,
