@@ -379,17 +379,32 @@ section {
 
 
 /* Homepage BGs */
-.fragrance, .story, .ingredients {
-  position: relative;
-  min-height: 500px;        /* ensures image space */
+.fragrance {
+  background-image: url("../Botellas_BG.png");
   background-size: cover;
   background-position: center;
+  min-height: 500px;   /* ensures image space */
+  position: relative;  /* required for overlay */
   color: #fff;
 }
 
-.fragrance { background-image: url("PSD-ProyectoFinal\Botellas_BG.png"); }
-.story     { background-image: url("PSD-ProyectoFinal\ferretHOME.jpg"); }
-.ingredients { background-image: url("PSD-ProyectoFinal\florHOME.jpg"); }
+.story {
+  background-image: url("../ferretHOME.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 500px;
+  position: relative;
+  color: #fff;
+}
+
+.ingredients {
+  background-image: url("../florHOME.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 500px;
+  position: relative;
+  color: #fff;
+}
 
 /* Overlay */
 .fragrance::before,
@@ -408,7 +423,6 @@ section {
   position: relative;
   z-index: 1;
 }
-
 
 /* ===== BANNER PRODUCT LISTING===== */
 .hero {
