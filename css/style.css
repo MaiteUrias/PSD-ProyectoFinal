@@ -379,26 +379,17 @@ section {
 
 
 /* Homepage BGs */
-.fragrance {
-  background-image: url("Botellas_BG.png"); 
+.fragrance, .story, .ingredients {
+  position: relative;
+  min-height: 500px;        /* ensures image space */
   background-size: cover;
   background-position: center;
-  color: #fff; /* texto visible */
+  color: #fff;
 }
 
-.story {
-  background-image: url("ferretHOME.jpg"); 
-  background-size: cover;
-  background-position: center;
-  color: #fff; /* texto visible */
-}
-
-.ingredients {
-  background-image: url("florHOME.jpg"); 
-  background-size: cover;
-  background-position: center;
-  color: #fff; /* texto visible */
-}
+.fragrance { background-image: url("Botellas_BG.png"); }
+.story     { background-image: url("ferretHOME.jpg"); }
+.ingredients { background-image: url("florHOME.jpg"); }
 
 /* Overlay */
 .fragrance::before,
@@ -407,7 +398,7 @@ section {
   content: "";
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
-  background: rgba(0,0,0,0.3); /* darkens background slightly */
+  background: rgba(0,0,0,0.3);
   z-index: 0;
 }
 
@@ -415,8 +406,9 @@ section {
 .story h2, .story .read-more,
 .ingredients h2, .ingredients .read-more {
   position: relative;
-  z-index: 1; /* keeps text above overlay */
+  z-index: 1;
 }
+
 
 /* ===== BANNER PRODUCT LISTING===== */
 .hero {
