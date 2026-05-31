@@ -29,9 +29,6 @@ h1, h2, h3, h4,
   align-items: center;
   padding: 0.5rem 2rem;
   background: #fff;
-}
-
-.top-bar {
   margin:20px;
 }
 
@@ -49,7 +46,7 @@ h1, h2, h3, h4,
 }
 
 .top-bar .logo img {
-  height: 80px; /* adjust size as needed */
+  height: 90px; /* adjust size as needed */
   display: inline-block;
 }
 
