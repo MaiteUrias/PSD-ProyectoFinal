@@ -1,29 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <title>Feressence - Producto Individual</title>
-    <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Montserrat:wght@400;500;700&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-
+  <meta charset="UTF-8">
+  <title>Ferressence - Home</title>
+  <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
+<body>
 
-<body> <!-- Los iconos son placeholders-->
-    <header class="top-bar">
-        <div class="profile-icon">👤</div>
-        <div class="icons"> <span class="icon search">🔍</span> <span class="icon favorites">❤️</span> <span
-                class="icon cart" id="cartBtn">🛍️</span> </div>
-    </header> <!-- botons de navegacion -->
-    <nav class="navbar">
-        <ul class="nav-links">
-            <li><a href="index_Home.html">HOME</a></li>
-            <li><a href="index_Product.html">CATALOG</a></li>
-            <li><a href="index_Individual.html">FEATURED</a></li>
-            <li><a href="index_About.html">ABOUT US</a></li>
-        </ul>
-    </nav>
+  <header class="top-bar">
+    <div class="profile-icon"><img src="PROFILEPS.png"></div>
+    
+    <div class="logo">
+      <img src="Ferrecense logo_Cafe.png" alt="Feressence Logo">
+    </div>
+    
+    <div class="icons">
+      <span class="icon search"><img src="SEARCHB.png"></span>
+      <span class="icon favorites">☆<span class="tooltip-counter" id="favCounter">0 favoritos</span></span>
+      <span class="icon cart" id="cartBtn"><img src="BAGN.png"></span>
+    </div>
+  </header>
+
+  <!-- Botones Nav -->
+  <nav class="navbar">
+    <ul class="nav-links">
+      <li><a href="index_Home.html">HOME</a></li>
+      <li><a href="index_Product.html">CATALOG</a></li>
+      <li><a href="index_Individual.html">FEATURED</a></li>
+      <li><a href="index_About.html">ABOUT US</a></li>
+    </ul>
+  </nav>
+
+  <!-- Secciones -->
+  <section class="fragrance">
+    <h2>OUR FRAGRANCES</h2>
+    <button class="read-more" onclick="location.href='index_Product.html'">READ MORE</button>
+  </section>
+
+  <section class="story">
+    <h2>OUR STORY</h2>
+    <button class="read-more" onclick="location.href='index_About.html'">READ MORE</button>
+  </section>
+
+  <section class="ingredients">
+    <h2>OUR INGREDIENTS</h2>
+    <button class="read-more" onclick="location.href='index_Product.html'">READ MORE</button>
+  </section>
+
+  <!-- Shopping Bag Slide -->
+  <div id="cartTab" class="slide-tab">
+    <button id="closeTab" class="close-btn">✖</button>
+    <h3>Your Shopping Bag</h3>
+
+    <div class="cart-items">
+      <div class="cart-item">
+        <img src="COUSSINETS.png" alt="Coussinets Eau de Parfum">
+        <div class="item-info">
+          <h4>COUSSINETS Eau de Parfum 100 ml</h4>
+          <p>$120</p>
+          <div class="quantity-controls">
+            <button class="qty-btn">-</button>
+            <span class="qty">1</span>
+            <button class="qty-btn">+</button>
+          </div>
+          <button class="remove-btn">Remove</button>
+        </div>
+      </div>
+
+      <div class="cart-item">
+        <img src="GRÂCE.png" alt="Grâce Eau de Parfum">
+        <div class="item-info">
+          <h4>GRÂCE Eau de Parfum 100 ml</h4>
+          <p>$105</p>
+          <div class="quantity-controls">
+            <button class="qty-btn">-</button>
+            <span class="qty">2</span>
+            <button class="qty-btn">+</button>
+          </div>
+          <button class="remove-btn">Remove</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="cart-summary">
+      <p>Subtotal: <span id="subtotal">$225</span></p>
+      <p>Taxes: --</p>
+      <p>Delivery method: --</p>
+      <p><strong>Total: <span id="total">$225</span></strong></p>
+      <button class="purchase-btn" onclick="location.href='index_Checkout.html'">PURCHASE</button>
+    </div>
+  </div>
 
 
     <section class="thankyou-page">
