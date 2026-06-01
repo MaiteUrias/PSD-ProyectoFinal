@@ -1519,11 +1519,12 @@ footer {
 
 /* ===== INDIVIDUAL PRODUCT PAGE ===== */
 
-.individual-product,
-.product-information,
-.hero-product,
-.tried-section{
-  background:#efefef;
+.individual-product {
+  display: flex;              /* gallery + info side by side */
+  gap: 40px;                  /* spacing between left and right */
+  align-items: flex-start;    /* align top edges */
+  max-width: 1200px;
+  margin: 40px auto;
 }
 
 /* evita que el section global rompa el layout */
@@ -1544,15 +1545,17 @@ footer {
   align-items:start;
 }
 
-.gallery{
-  display:flex;
-  flex-direction:column;
-  gap:30px;
+.gallery {
+  display: flex;
+  flex-direction: column;     /* stack vertically (main image above, close-up below) */
+  gap: 20px;
 }
 
-.gallery img{
-  width:100%;
-  display:block;
+.gallery img {
+  width: 300px;               /* adjust size */
+  height: auto;
+  object-fit: cover;
+  border-radius: 6px;
 }
 
 .product-info{
