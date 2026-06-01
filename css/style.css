@@ -1750,3 +1750,102 @@ footer {
   }
 
 }
+
+/* === ORDER CONFIRMATION PAGE === */
+.thankyou-page {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.thankyou-hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  margin-bottom: 50px;
+}
+
+.thankyou-text h1 {
+  font-family: 'Marcellus', serif;
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.thankyou-text p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.thankyou-image img {
+  max-width: 400px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.order-summary-page {
+  background: #fff;
+  padding: 30px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.order-summary-page h2 {
+  font-family: 'Marcellus', serif;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.order-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 25px;
+}
+
+.order-item img {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.order-info h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.order-info p {
+  margin: 2px 0;
+  color: #555;
+}
+
+.order-price {
+  margin-left: auto;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.total-box {
+  background: #f1f1f1;
+  padding: 20px;
+  margin-top: 30px;
+  border-radius: 6px;
+}
+
+.total-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  font-size: 0.95rem;
+}
+
+.total-row.final {
+  border-top: 2px solid #b4b4b4;
+  padding-top: 12px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
