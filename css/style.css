@@ -1552,7 +1552,7 @@ footer {
 }
 
 .gallery img {
-  width: 300px;               /* adjust size */
+  width: 500px;               /* adjust size */
   height: auto;
   object-fit: cover;
   border-radius: 6px;
